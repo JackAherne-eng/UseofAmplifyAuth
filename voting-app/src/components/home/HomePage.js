@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Container from "react-bootstrap/esm/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,7 +25,10 @@ function HomePage() {
                         Quisque bibendum nibh a nisl tempus, sed mollis dui fringilla. Etiam blandit gravida interdum. Duis in gravida felis. 
                         Nullam congue neque ut sagittis fringilla.
                     </p>
-                    <Button varient="outline-primary">Learn More &gt;&gt;</Button>
+                    <Link
+                    to ={{ pathname: '/contacts'}}>
+                    <Button varient="outline-primary">View Politicians &gt;&gt;</Button>
+                    </Link>
                 </Col>
             </Row>
         </Container>
